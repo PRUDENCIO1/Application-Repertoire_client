@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Modifier un client</h2>
+<form method="POST">
+    <label>Nom</label><input name="nom" value="{{ client.nom }}"><br>
+    <label>Prénom</label><input name="prenom" value="{{ client.prenom }}"><br>
+    <label>Téléphone</label><input name="telephone" value="{{ client.telephone }}"><br>
+    <label>Email</label><input name="email" value="{{ client.email }}"><br>
+    <label>Pays</label><input name="pays" value="{{ client.pays }}"><br>
+    <button type="submit">Enregistrer</button>
+</form>
+{% endblock %}
